@@ -11,14 +11,14 @@ using System.Windows.Forms;
 
 namespace Penzugyi_tanacsado
 {
-    public partial class Form1 : Form
+    public partial class Pénzügyi_tanácsadás : Form
     {
-        public Form1()
+        public Pénzügyi_tanácsadás()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Pénzügyi_tanácsadás_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'tanacsadoDataSet.szakterulet' table. You can move, or remove it, as needed.
             this.szakteruletTableAdapter.Fill(this.tanacsadoDataSet.szakterulet);
@@ -26,12 +26,13 @@ namespace Penzugyi_tanacsado
             this.allDataTableAdapter.Fill(this.tanacsadoDataSet.AllData);
             // TODO: This line of code loads data into the 'tanacsadoDataSet.AllData' table. You can move, or remove it, as needed.
             this.allDataTableAdapter.Fill(this.tanacsadoDataSet.AllData);
+            Size = new Size(1000, 500);
 
         }
 
         private void Szűrésbe_Click_1(object sender, EventArgs e)
         {
-            bindingSourceAllDataForTable.Filter = $"SzakterületMegnevezése='{comboBox1.SelectedValue}'";
+            bindingSourceAllDataForTable.Filter = $"SzakterületMegnevezése='{Szakterulet.SelectedValue}'";
         }
 
         private void Szűréski_Click(object sender, EventArgs e)
@@ -45,10 +46,16 @@ namespace Penzugyi_tanacsado
             {
                 return;
             }
-            string fileName = Path.Combine(folderBrowserDialog1.SelectedPath, $"tanacsadok_{comboBox1.SelectedValue}_{DateTime.Now:yyyy-MM-dd}.csv");
+            string fileName = Path.Combine(folderBrowserDialog1.SelectedPath, $"tanacsadok_{Szakterulet.SelectedValue}_{DateTime.Now:yyyy-MM-dd}.csv");
             File.WriteAllLines(fileName, 
                 tanacsadoDataSet.AllData.Select(x => string.Join(";", x.ItemArray))
                 );
+        }
+
+        private void UjTalalkozoFelvetele_Click(object sender, EventArgs e)
+        {
+            Új_találkozó_felvétele form2 = new Új_találkozó_felvétele();
+            form2.ShowDialog();
         }
     }
 }
