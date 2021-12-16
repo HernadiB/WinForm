@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
@@ -42,16 +38,17 @@ namespace Penzugyi_tanacsado
             //int Also = Convert.ToInt32(this.alsoHatar.Value);
             //int Felso = Convert.ToInt32(this.felsoHatar.Value);
 
-            if (alsoH < felsoH && alsoH % 1000 == 0 && felsoH % 1000 == 0)
+            if (alsoH < felsoH && alsoH % 1000 == 0 && felsoH % 1000 == 0 /*&& bindingSourceAllDataForTable.Filter == Szakterulet.SelectedValue*/)
             {
+                //Szakterulet.DisplayMember == Szakterulet.SelectedValue
                 //bindingSourceAllDataForTable.Filter = $"SzakterületMegnevezése='{Szakterulet.SelectedValue}'";
                 string szak = Szakterulet.SelectedValue.ToString();
                 connection.Open();
                 SqlCommand cmd = connection.CreateCommand();
                 cmd.CommandType = CommandType.Text;
                 //cmd.CommandText = "SELECT * FROM AllData WHERE (TanácsadóÓradíja > ('" + this.alsoHatar.Value + "') AND TanácsadóÓradíja < ('" + this.felsoHatar.Value + "')) ORDER BY SzakterületMegnevezése, TanácsadóNeve, TalálkozóDátuma DESC";
-                //cmd.CommandText = "SELECT * FROM AllData WHERE (TanácsadóÓradíja BETWEEN ('" + this.alsoHatar.Value + "') AND ('" + this.felsoHatar.Value + "')) AND SzakterületMegnevezése = ('" + this.Szakterulet.SelectedItem + "')";
                 cmd.CommandText = "SELECT * FROM AllData WHERE (TanácsadóÓradíja BETWEEN ('" + this.alsoHatar.Value + "') AND ('" + this.felsoHatar.Value + "')) ORDER BY SzakterületMegnevezése, TanácsadóNeve, TalálkozóDátuma DESC";
+                //cmd.CommandText = "SELECT * FROM AllData WHERE (TanácsadóÓradíja BETWEEN ('" + this.alsoHatar.Value + "') AND ('" + this.felsoHatar.Value + "')) ORDER BY SzakterületMegnevezése, TanácsadóNeve, TalálkozóDátuma DESC";
                 //cmd.CommandText = "SELECT * FROM AllData WHERE SzakterületMegnevezése = ('" + this.Szakterulet.SelectedValue + "')";
                 cmd.ExecuteNonQuery();
                 DataTable dt = new DataTable();
