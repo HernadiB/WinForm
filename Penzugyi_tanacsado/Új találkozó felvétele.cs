@@ -32,12 +32,12 @@ namespace Penzugyi_tanacsado
             int talalkozoIdo = (int)Convert.ToInt32(talalkozoIdotartama.Value);
 
             connection.Open();
-            //string Query = "INSERT INTO tanacsado.AllData (TanácsadóNeve,ÜgyfélNeve,TalálkozóDátuma,TalálkozóKezdésiIdőpontja,TalálkozóIdőtartama) values(" + this.tanacsadoNeve.SelectedItem.ToString()", `" + this.ugyfelNeve.SelectedItem.ToString()"')";
-            //command = new SqlCommand("INSERT INTO Mentett values('"+this.tanacsadoNeve.Text+ "', '"+this.ugyfelNeve.Text+"', '"+this.talalkozoDatuma.Text+"', '"+this.talalkozoIdeje.Text+"', '"+this.talalkozoIdotartama+"')", connection);
-            //command.ExecuteNonQuery();
-            //MessageBox.Show("Az adatok sikeresen elmentve!");
-            //connection.Close();
-            
+            string Query = "INSERT INTO tanacsado.AllData (TanácsadóNeve,ÜgyfélNeve,TalálkozóDátuma,TalálkozóKezdésiIdőpontja,TalálkozóIdőtartama) ";
+            SqlCommand command = new SqlCommand("INSERT INTO Mentett values('" + this.tanacsadoNeve.Text + "', '" + this.ugyfelNeve.Text + "', '" + this.talalkozoDatuma.Text + "', '" + this.talalkozoIdeje.Text + "', '" + this.talalkozoIdotartama + "')", connection);
+            command.ExecuteNonQuery();
+            MessageBox.Show("Az adatok sikeresen elmentve!");
+            connection.Close();
+
         }
 
         private void Mégse_Click(object sender, EventArgs e)

@@ -35,21 +35,12 @@ namespace Penzugyi_tanacsado
             int alsoH = (int)Convert.ToUInt32(alsoHatar.Value);
             int felsoH = (int)Convert.ToUInt32(felsoHatar.Value);
 
-            //int Also = Convert.ToInt32(this.alsoHatar.Value);
-            //int Felso = Convert.ToInt32(this.felsoHatar.Value);
-
-            if (alsoH < felsoH && alsoH % 1000 == 0 && felsoH % 1000 == 0 /*&& bindingSourceAllDataForTable.Filter == Szakterulet.SelectedValue*/)
+            if (alsoH < felsoH && alsoH % 1000 == 0 && felsoH % 1000 == 0)
             {
-                //Szakterulet.DisplayMember == Szakterulet.SelectedValue
-                //bindingSourceAllDataForTable.Filter = $"SzakterületMegnevezése='{Szakterulet.SelectedValue}'";
-                string szak = Szakterulet.SelectedValue.ToString();
                 connection.Open();
                 SqlCommand cmd = connection.CreateCommand();
                 cmd.CommandType = CommandType.Text;
-                //cmd.CommandText = "SELECT * FROM AllData WHERE (TanácsadóÓradíja > ('" + this.alsoHatar.Value + "') AND TanácsadóÓradíja < ('" + this.felsoHatar.Value + "')) ORDER BY SzakterületMegnevezése, TanácsadóNeve, TalálkozóDátuma DESC";
-                cmd.CommandText = "SELECT * FROM AllData WHERE (TanácsadóÓradíja BETWEEN ('" + this.alsoHatar.Value + "') AND ('" + this.felsoHatar.Value + "')) ORDER BY SzakterületMegnevezése, TanácsadóNeve, TalálkozóDátuma DESC";
-                //cmd.CommandText = "SELECT * FROM AllData WHERE (TanácsadóÓradíja BETWEEN ('" + this.alsoHatar.Value + "') AND ('" + this.felsoHatar.Value + "')) ORDER BY SzakterületMegnevezése, TanácsadóNeve, TalálkozóDátuma DESC";
-                //cmd.CommandText = "SELECT * FROM AllData WHERE SzakterületMegnevezése = ('" + this.Szakterulet.SelectedValue + "')";
+                cmd.CommandText = "SELECT * FROM AllData WHERE (TanácsadóÓradíja BETWEEN ('" + this.alsoHatar.Value + "') AND ('" + this.felsoHatar.Value + "')) AND (SzakterületMegnevezése = ('" + Szakterulet.SelectedValue+"')) ORDER BY SzakterületMegnevezése, TanácsadóNeve, TalálkozóDátuma DESC";
                 cmd.ExecuteNonQuery();
                 DataTable dt = new DataTable();
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -71,7 +62,6 @@ namespace Penzugyi_tanacsado
 
         private void Szűréski_Click(object sender, EventArgs e)
         {
-            //bindingSourceAllDataForTable.Filter = "";
             connection.Open();
             SqlCommand cmd = connection.CreateCommand();
             cmd.CommandType = CommandType.Text;

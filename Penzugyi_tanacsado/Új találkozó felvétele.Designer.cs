@@ -91,7 +91,7 @@
             this.tableLayoutPanel1.Controls.Add(this.tanacsadoNeve, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.ugyfelNeve, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 22);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 37);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
@@ -101,17 +101,17 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66736F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66736F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.6632F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(729, 502);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(729, 487);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // Ügyfél_neve
             // 
             this.Ügyfél_neve.AutoSize = true;
             this.Ügyfél_neve.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Ügyfél_neve.Location = new System.Drawing.Point(2, 83);
+            this.Ügyfél_neve.Location = new System.Drawing.Point(2, 81);
             this.Ügyfél_neve.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Ügyfél_neve.Name = "Ügyfél_neve";
-            this.Ügyfél_neve.Size = new System.Drawing.Size(101, 83);
+            this.Ügyfél_neve.Size = new System.Drawing.Size(186, 81);
             this.Ügyfél_neve.TabIndex = 1;
             this.Ügyfél_neve.Text = "Ügyfél neve:";
             // 
@@ -119,10 +119,10 @@
             // 
             this.Találkozó_dátuma.AutoSize = true;
             this.Találkozó_dátuma.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Találkozó_dátuma.Location = new System.Drawing.Point(2, 166);
+            this.Találkozó_dátuma.Location = new System.Drawing.Point(2, 162);
             this.Találkozó_dátuma.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Találkozó_dátuma.Name = "Találkozó_dátuma";
-            this.Találkozó_dátuma.Size = new System.Drawing.Size(145, 83);
+            this.Találkozó_dátuma.Size = new System.Drawing.Size(156, 81);
             this.Találkozó_dátuma.TabIndex = 2;
             this.Találkozó_dátuma.Text = "Találkozó dátuma:";
             // 
@@ -130,10 +130,10 @@
             // 
             this.Találkozó_ideje.AutoSize = true;
             this.Találkozó_ideje.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Találkozó_ideje.Location = new System.Drawing.Point(2, 249);
+            this.Találkozó_ideje.Location = new System.Drawing.Point(2, 243);
             this.Találkozó_ideje.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Találkozó_ideje.Name = "Találkozó_ideje";
-            this.Találkozó_ideje.Size = new System.Drawing.Size(125, 83);
+            this.Találkozó_ideje.Size = new System.Drawing.Size(230, 81);
             this.Találkozó_ideje.TabIndex = 3;
             this.Találkozó_ideje.Text = "Találkozó ideje:";
             // 
@@ -141,20 +141,20 @@
             // 
             this.Találkozó_idotartama.AutoSize = true;
             this.Találkozó_idotartama.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Találkozó_idotartama.Location = new System.Drawing.Point(2, 332);
+            this.Találkozó_idotartama.Location = new System.Drawing.Point(2, 324);
             this.Találkozó_idotartama.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Találkozó_idotartama.Name = "Találkozó_idotartama";
-            this.Találkozó_idotartama.Size = new System.Drawing.Size(169, 83);
+            this.Találkozó_idotartama.Size = new System.Drawing.Size(169, 81);
             this.Találkozó_idotartama.TabIndex = 4;
             this.Találkozó_idotartama.Text = "Találkozó időtartama:";
             // 
             // talalkozoDatuma
             // 
             this.talalkozoDatuma.Dock = System.Windows.Forms.DockStyle.Top;
-            this.talalkozoDatuma.Location = new System.Drawing.Point(264, 168);
+            this.talalkozoDatuma.Location = new System.Drawing.Point(244, 164);
             this.talalkozoDatuma.Margin = new System.Windows.Forms.Padding(2);
             this.talalkozoDatuma.Name = "talalkozoDatuma";
-            this.talalkozoDatuma.Size = new System.Drawing.Size(389, 27);
+            this.talalkozoDatuma.Size = new System.Drawing.Size(360, 42);
             this.talalkozoDatuma.TabIndex = 7;
             // 
             // talalkozoIdotartama
@@ -162,7 +162,7 @@
             this.talalkozoIdotartama.CausesValidation = false;
             this.talalkozoIdotartama.DecimalPlaces = 1;
             this.talalkozoIdotartama.Dock = System.Windows.Forms.DockStyle.Left;
-            this.talalkozoIdotartama.Location = new System.Drawing.Point(264, 334);
+            this.talalkozoIdotartama.Location = new System.Drawing.Point(244, 326);
             this.talalkozoIdotartama.Margin = new System.Windows.Forms.Padding(2);
             this.talalkozoIdotartama.Maximum = new decimal(new int[] {
             4,
@@ -175,7 +175,7 @@
             0,
             0});
             this.talalkozoIdotartama.Name = "talalkozoIdotartama";
-            this.talalkozoIdotartama.Size = new System.Drawing.Size(182, 27);
+            this.talalkozoIdotartama.Size = new System.Drawing.Size(182, 42);
             this.talalkozoIdotartama.TabIndex = 9;
             this.talalkozoIdotartama.Value = new decimal(new int[] {
             1,
@@ -190,7 +190,7 @@
             this.Tanácsadó_neve.Location = new System.Drawing.Point(2, 0);
             this.Tanácsadó_neve.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Tanácsadó_neve.Name = "Tanácsadó_neve";
-            this.Tanácsadó_neve.Size = new System.Drawing.Size(136, 83);
+            this.Tanácsadó_neve.Size = new System.Drawing.Size(176, 81);
             this.Tanácsadó_neve.TabIndex = 0;
             this.Tanácsadó_neve.Text = "Tanácsadó neve:";
             // 
@@ -198,10 +198,10 @@
             // 
             this.talalkozoIdeje.Dock = System.Windows.Forms.DockStyle.Top;
             this.talalkozoIdeje.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.talalkozoIdeje.Location = new System.Drawing.Point(264, 251);
+            this.talalkozoIdeje.Location = new System.Drawing.Point(244, 245);
             this.talalkozoIdeje.Margin = new System.Windows.Forms.Padding(2);
             this.talalkozoIdeje.Name = "talalkozoIdeje";
-            this.talalkozoIdeje.Size = new System.Drawing.Size(389, 27);
+            this.talalkozoIdeje.Size = new System.Drawing.Size(360, 42);
             this.talalkozoIdeje.TabIndex = 10;
             // 
             // Mégse
@@ -210,10 +210,10 @@
             this.Mégse.BackColor = System.Drawing.Color.LemonChiffon;
             this.Mégse.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Mégse.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Mégse.Location = new System.Drawing.Point(657, 417);
+            this.Mégse.Location = new System.Drawing.Point(608, 407);
             this.Mégse.Margin = new System.Windows.Forms.Padding(2);
             this.Mégse.Name = "Mégse";
-            this.Mégse.Size = new System.Drawing.Size(69, 30);
+            this.Mégse.Size = new System.Drawing.Size(118, 45);
             this.Mégse.TabIndex = 1;
             this.Mégse.Text = "Mégse";
             this.Mégse.UseVisualStyleBackColor = false;
@@ -225,10 +225,10 @@
             this.Felvétel.BackColor = System.Drawing.Color.LemonChiffon;
             this.Felvétel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Felvétel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Felvétel.Location = new System.Drawing.Point(264, 417);
+            this.Felvétel.Location = new System.Drawing.Point(244, 407);
             this.Felvétel.Margin = new System.Windows.Forms.Padding(2);
             this.Felvétel.Name = "Felvétel";
-            this.Felvétel.Size = new System.Drawing.Size(77, 30);
+            this.Felvétel.Size = new System.Drawing.Size(134, 45);
             this.Felvétel.TabIndex = 2;
             this.Felvétel.Text = "Felvétel";
             this.Felvétel.UseVisualStyleBackColor = false;
@@ -240,10 +240,10 @@
             this.tanacsadoNeve.DisplayMember = "nev";
             this.tanacsadoNeve.Dock = System.Windows.Forms.DockStyle.Left;
             this.tanacsadoNeve.FormattingEnabled = true;
-            this.tanacsadoNeve.Location = new System.Drawing.Point(264, 2);
+            this.tanacsadoNeve.Location = new System.Drawing.Point(244, 2);
             this.tanacsadoNeve.Margin = new System.Windows.Forms.Padding(2);
             this.tanacsadoNeve.Name = "tanacsadoNeve";
-            this.tanacsadoNeve.Size = new System.Drawing.Size(187, 28);
+            this.tanacsadoNeve.Size = new System.Drawing.Size(187, 43);
             this.tanacsadoNeve.TabIndex = 11;
             this.tanacsadoNeve.ValueMember = "nev";
             // 
@@ -263,10 +263,10 @@
             this.ugyfelNeve.DisplayMember = "nev";
             this.ugyfelNeve.Dock = System.Windows.Forms.DockStyle.Left;
             this.ugyfelNeve.FormattingEnabled = true;
-            this.ugyfelNeve.Location = new System.Drawing.Point(264, 85);
+            this.ugyfelNeve.Location = new System.Drawing.Point(244, 83);
             this.ugyfelNeve.Margin = new System.Windows.Forms.Padding(2);
             this.ugyfelNeve.Name = "ugyfelNeve";
-            this.ugyfelNeve.Size = new System.Drawing.Size(183, 28);
+            this.ugyfelNeve.Size = new System.Drawing.Size(183, 43);
             this.ugyfelNeve.TabIndex = 12;
             this.ugyfelNeve.ValueMember = "nev";
             // 
