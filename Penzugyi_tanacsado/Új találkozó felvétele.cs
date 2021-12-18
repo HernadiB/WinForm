@@ -8,6 +8,9 @@ namespace Penzugyi_tanacsado
     public partial class Új_találkozó_felvétele : Form
     {
         SqlConnection connection = new SqlConnection(@"Data Source=HERNADI;Initial Catalog=tanacsado;Integrated Security=True");
+        SqlCommand comTanacsado = new SqlCommand();
+        SqlCommand comUgyfel = new SqlCommand();
+        SqlCommand comTalalkozo = new SqlCommand();
 
         public Új_találkozó_felvétele()
         {
@@ -25,19 +28,30 @@ namespace Penzugyi_tanacsado
 
         private void Felvétel_Click(object sender, EventArgs e)
         {
-            string tanacsadoNev = tanacsadoNeve.Text;
-            string ugyfelNev = ugyfelNeve.Text;
-            DateTime talalkodoDat = (this.talalkozoDatuma.MinDate = System.DateTime.Now);
-            DateTime talalkozoIde = (this.talalkozoIdeje.MinDate = System.DateTime.Now);
-            int talalkozoIdo = (int)Convert.ToInt32(talalkozoIdotartama.Value);
+            comTanacsado.Connection = connection;
+            comUgyfel.Connection = connection;
+            comTalalkozo.Connection = connection;
 
             connection.Open();
-            string Query = "INSERT INTO tanacsado.AllData (TanácsadóNeve,ÜgyfélNeve,TalálkozóDátuma,TalálkozóKezdésiIdőpontja,TalálkozóIdőtartama) ";
-            SqlCommand command = new SqlCommand("INSERT INTO Mentett values('" + this.tanacsadoNeve.Text + "', '" + this.ugyfelNeve.Text + "', '" + this.talalkozoDatuma.Text + "', '" + this.talalkozoIdeje.Text + "', '" + this.talalkozoIdotartama + "')", connection);
-            command.ExecuteNonQuery();
-            MessageBox.Show("Az adatok sikeresen elmentve!");
+
+            comTanacsado.CommandText = @"INSERT INTO tanacsado (nev) VALUES (@tnev)";
+            comTanacsado.Parameters.AddWithValue("@tnev", tanacsadoNeve.SelectedValue);
+            comTanacsado.ExecuteNonQuery();
+
+            comUgyfel.CommandText = @"INSERT INTO ugyfel (nev) VALUES (@unev)";
+            comUgyfel.Parameters.AddWithValue("@unev", ugyfelNeve.SelectedValue);
+            comUgyfel.ExecuteNonQuery();
+
+            comTalalkozo.CommandText = @"INSERT INTO talalkozo (datum, idopont, idotartam) VALUES (@datum, @idopont, @idotartam)";
+            comTalalkozo.Parameters.AddWithValue("@datum", this.talalkozoDatuma.Value.Date);
+            comTalalkozo.Parameters.AddWithValue("@idopont", $"{this.talalkozoIdeje.Value.TimeOfDay.Hours}:{this.talalkozoIdeje.Value.TimeOfDay.Minutes}");
+            comTalalkozo.Parameters.AddWithValue("@idotartam", this.talalkozoIdotartama.Value);
+            comTalalkozo.ExecuteNonQuery();
+
             connection.Close();
 
+            MessageBox.Show("Az adatok sikeresen elmentve!");
+            this.Close();
         }
 
         private void Mégse_Click(object sender, EventArgs e)

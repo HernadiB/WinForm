@@ -26,8 +26,6 @@ namespace Penzugyi_tanacsado
             // TODO: This line of code loads data into the 'tanacsadoDataSet.AllData' table. You can move, or remove it, as needed.
             this.allDataTableAdapter.Fill(this.tanacsadoDataSet.AllData);
             Size = new Size(1000, 500);
-
-
         }
 
         private void Szűrésbe_Click_1(object sender, EventArgs e)
