@@ -1,1 +1,1 @@
-# WinForm
+Pénzügyi tanácsadó alkalmazás
