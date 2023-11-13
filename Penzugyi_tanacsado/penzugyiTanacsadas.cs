@@ -8,11 +8,11 @@ using System.Data.SqlClient;
 
 namespace Penzugyi_tanacsado
 {
-    public partial class Pénzügyi_tanácsadás : Form
+    public partial class penzugyiTanacsadas : Form
     {
         SqlConnection connection = new SqlConnection(@"Data Source=HERNADI;Initial Catalog=tanacsado;Integrated Security=True");
 
-        public Pénzügyi_tanácsadás()
+        public penzugyiTanacsadas()
         {
             InitializeComponent();
         }
@@ -88,8 +88,8 @@ namespace Penzugyi_tanacsado
 
         private void UjTalalkozoFelvetele_Click(object sender, EventArgs e)
         {
-            Új_találkozó_felvétele form2 = new Új_találkozó_felvétele();
-            form2.ShowDialog();
+            Új_találkozó_felvétele uj = new Új_találkozó_felvétele();
+            uj.ShowDialog();
         }
 
         private void Bezaras_Click(object sender, EventArgs e)

@@ -1,6 +1,6 @@
 ﻿namespace Penzugyi_tanacsado
 {
-    partial class Pénzügyi_tanácsadás
+    partial class penzugyiTanacsadas
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pénzügyi_tanácsadás));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(penzugyiTanacsadas));
             this.bindingSourceAllDataForTable = new System.Windows.Forms.BindingSource(this.components);
             this.tanacsadoDataSet = new Penzugyi_tanacsado.tanacsadoDataSet();
             this.allDataTableAdapter = new Penzugyi_tanacsado.tanacsadoDataSetTableAdapters.AllDataTableAdapter();
@@ -92,7 +92,7 @@
             // 
             this.tableLayoutPanel1.ColumnCount = 6;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 47F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
@@ -107,17 +107,17 @@
             this.tableLayoutPanel1.Controls.Add(this.Bezaras, 3, 6);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 7;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.00062F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.00062F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.00062F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24.99813F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(882, 500);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1544, 906);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // dataGridView1
@@ -141,15 +141,15 @@
             this.dataGridView1.DataSource = this.bindingSourceAllDataForTable;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dataGridView1.Location = new System.Drawing.Point(4, 4);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Location = new System.Drawing.Point(7, 7);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.tableLayoutPanel1.SetRowSpan(this.dataGridView1, 7);
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(447, 492);
+            this.dataGridView1.Size = new System.Drawing.Size(624, 892);
             this.dataGridView1.TabIndex = 1;
             // 
             // találkozóDátumaDataGridViewTextBoxColumn
@@ -224,12 +224,12 @@
             this.Szűrők.Dock = System.Windows.Forms.DockStyle.Top;
             this.Szűrők.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.Szűrők.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Szűrők.Location = new System.Drawing.Point(486, 96);
-            this.Szűrők.Margin = new System.Windows.Forms.Padding(4);
+            this.Szűrők.Location = new System.Drawing.Point(692, 173);
+            this.Szűrők.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.Szűrők.Name = "Szűrők";
-            this.Szűrők.Padding = new System.Windows.Forms.Padding(4);
+            this.Szűrők.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.tableLayoutPanel1.SetRowSpan(this.Szűrők, 3);
-            this.Szűrők.Size = new System.Drawing.Size(392, 258);
+            this.Szűrők.Size = new System.Drawing.Size(845, 468);
             this.Szűrők.TabIndex = 9;
             this.Szűrők.TabStop = false;
             this.Szűrők.Text = "Szűrők";
@@ -239,7 +239,7 @@
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.99999F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.00001F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 11F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 19F));
             this.tableLayoutPanel2.Controls.Add(this.Szűrésbe, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.Szűréski, 1, 4);
             this.tableLayoutPanel2.Controls.Add(this.Óradíj_felső_határa, 0, 3);
@@ -249,17 +249,17 @@
             this.tableLayoutPanel2.Controls.Add(this.alsoHatar, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.felsoHatar, 1, 3);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 23);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(7, 41);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 6;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 61F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(384, 231);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 89F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 89F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 89F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 111F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 14F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(831, 420);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // Szűrésbe
@@ -268,10 +268,10 @@
             this.Szűrésbe.BackColor = System.Drawing.Color.LemonChiffon;
             this.Szűrésbe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Szűrésbe.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Szűrésbe.Location = new System.Drawing.Point(4, 176);
-            this.Szűrésbe.Margin = new System.Windows.Forms.Padding(4);
+            this.Szűrésbe.Location = new System.Drawing.Point(7, 319);
+            this.Szűrésbe.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.Szűrésbe.Name = "Szűrésbe";
-            this.Szűrésbe.Size = new System.Drawing.Size(183, 53);
+            this.Szűrésbe.Size = new System.Drawing.Size(401, 97);
             this.Szűrésbe.TabIndex = 0;
             this.Szűrésbe.Text = "Szűrés be";
             this.Szűrésbe.UseVisualStyleBackColor = false;
@@ -283,10 +283,10 @@
             this.Szűréski.BackColor = System.Drawing.Color.LemonChiffon;
             this.Szűréski.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Szűréski.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Szűréski.Location = new System.Drawing.Point(195, 176);
-            this.Szűréski.Margin = new System.Windows.Forms.Padding(4);
+            this.Szűréski.Location = new System.Drawing.Point(422, 319);
+            this.Szűréski.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.Szűréski.Name = "Szűréski";
-            this.Szűréski.Size = new System.Drawing.Size(185, 53);
+            this.Szűréski.Size = new System.Drawing.Size(402, 97);
             this.Szűréski.TabIndex = 3;
             this.Szűréski.Text = "Szűrés ki";
             this.Szűréski.UseVisualStyleBackColor = false;
@@ -296,10 +296,10 @@
             // 
             this.Óradíj_felső_határa.AutoSize = true;
             this.Óradíj_felső_határa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Óradíj_felső_határa.Location = new System.Drawing.Point(4, 123);
-            this.Óradíj_felső_határa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Óradíj_felső_határa.Location = new System.Drawing.Point(7, 223);
+            this.Óradíj_felső_határa.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.Óradíj_felső_határa.Name = "Óradíj_felső_határa";
-            this.Óradíj_felső_határa.Size = new System.Drawing.Size(183, 49);
+            this.Óradíj_felső_határa.Size = new System.Drawing.Size(401, 89);
             this.Óradíj_felső_határa.TabIndex = 6;
             this.Óradíj_felső_határa.Text = "Óradíj felső határa: ";
             // 
@@ -311,10 +311,10 @@
             this.Szakterulet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Szakterulet.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Szakterulet.FormattingEnabled = true;
-            this.Szakterulet.Location = new System.Drawing.Point(195, 29);
-            this.Szakterulet.Margin = new System.Windows.Forms.Padding(4);
+            this.Szakterulet.Location = new System.Drawing.Point(422, 52);
+            this.Szakterulet.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.Szakterulet.Name = "Szakterulet";
-            this.Szakterulet.Size = new System.Drawing.Size(185, 28);
+            this.Szakterulet.Size = new System.Drawing.Size(402, 41);
             this.Szakterulet.TabIndex = 2;
             this.Szakterulet.ValueMember = "megnevezes";
             // 
@@ -327,10 +327,10 @@
             // 
             this.Óradíj_alsó_határa.AutoSize = true;
             this.Óradíj_alsó_határa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Óradíj_alsó_határa.Location = new System.Drawing.Point(4, 74);
-            this.Óradíj_alsó_határa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Óradíj_alsó_határa.Location = new System.Drawing.Point(7, 134);
+            this.Óradíj_alsó_határa.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.Óradíj_alsó_határa.Name = "Óradíj_alsó_határa";
-            this.Óradíj_alsó_határa.Size = new System.Drawing.Size(183, 49);
+            this.Óradíj_alsó_határa.Size = new System.Drawing.Size(401, 89);
             this.Óradíj_alsó_határa.TabIndex = 5;
             this.Óradíj_alsó_határa.Text = "Óradíj alsó határa:";
             // 
@@ -338,10 +338,10 @@
             // 
             this.Szakterület.AutoSize = true;
             this.Szakterület.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Szakterület.Location = new System.Drawing.Point(4, 25);
-            this.Szakterület.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Szakterület.Location = new System.Drawing.Point(7, 45);
+            this.Szakterület.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.Szakterület.Name = "Szakterület";
-            this.Szakterület.Size = new System.Drawing.Size(183, 49);
+            this.Szakterület.Size = new System.Drawing.Size(401, 89);
             this.Szakterület.TabIndex = 9;
             this.Szakterület.Text = "Szakterület:";
             // 
@@ -352,15 +352,15 @@
             0,
             0,
             0});
-            this.alsoHatar.Location = new System.Drawing.Point(193, 76);
-            this.alsoHatar.Margin = new System.Windows.Forms.Padding(2);
+            this.alsoHatar.Location = new System.Drawing.Point(419, 138);
+            this.alsoHatar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.alsoHatar.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.alsoHatar.Name = "alsoHatar";
-            this.alsoHatar.Size = new System.Drawing.Size(189, 26);
+            this.alsoHatar.Size = new System.Drawing.Size(331, 41);
             this.alsoHatar.TabIndex = 10;
             this.alsoHatar.ThousandsSeparator = true;
             // 
@@ -371,15 +371,15 @@
             0,
             0,
             0});
-            this.felsoHatar.Location = new System.Drawing.Point(193, 125);
-            this.felsoHatar.Margin = new System.Windows.Forms.Padding(2);
+            this.felsoHatar.Location = new System.Drawing.Point(419, 227);
+            this.felsoHatar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.felsoHatar.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.felsoHatar.Name = "felsoHatar";
-            this.felsoHatar.Size = new System.Drawing.Size(189, 26);
+            this.felsoHatar.Size = new System.Drawing.Size(331, 41);
             this.felsoHatar.TabIndex = 11;
             this.felsoHatar.ThousandsSeparator = true;
             // 
@@ -387,10 +387,10 @@
             // 
             this.Adatok_exportálása.AutoSize = true;
             this.Adatok_exportálása.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Adatok_exportálása.Location = new System.Drawing.Point(486, 367);
-            this.Adatok_exportálása.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Adatok_exportálása.Location = new System.Drawing.Point(692, 664);
+            this.Adatok_exportálása.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.Adatok_exportálása.Name = "Adatok_exportálása";
-            this.Adatok_exportálása.Size = new System.Drawing.Size(156, 20);
+            this.Adatok_exportálása.Size = new System.Drawing.Size(278, 36);
             this.Adatok_exportálása.TabIndex = 10;
             this.Adatok_exportálása.Text = "Adatok exportálása:";
             // 
@@ -398,10 +398,10 @@
             // 
             this.Új_találkozó_felvétele.AutoSize = true;
             this.Új_találkozó_felvétele.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Új_találkozó_felvétele.Location = new System.Drawing.Point(484, 411);
-            this.Új_találkozó_felvétele.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Új_találkozó_felvétele.Location = new System.Drawing.Point(689, 744);
+            this.Új_találkozó_felvétele.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Új_találkozó_felvétele.Name = "Új_találkozó_felvétele";
-            this.Új_találkozó_felvétele.Size = new System.Drawing.Size(168, 20);
+            this.Új_találkozó_felvétele.Size = new System.Drawing.Size(308, 35);
             this.Új_találkozó_felvétele.TabIndex = 11;
             this.Új_találkozó_felvétele.Text = "Új találkozó felvétele:";
             // 
@@ -412,10 +412,10 @@
             this.UjTalalkozoFelvetele.Dock = System.Windows.Forms.DockStyle.Left;
             this.UjTalalkozoFelvetele.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.UjTalalkozoFelvetele.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.UjTalalkozoFelvetele.Location = new System.Drawing.Point(658, 415);
-            this.UjTalalkozoFelvetele.Margin = new System.Windows.Forms.Padding(4);
+            this.UjTalalkozoFelvetele.Location = new System.Drawing.Point(1008, 751);
+            this.UjTalalkozoFelvetele.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.UjTalalkozoFelvetele.Name = "UjTalalkozoFelvetele";
-            this.UjTalalkozoFelvetele.Size = new System.Drawing.Size(126, 36);
+            this.UjTalalkozoFelvetele.Size = new System.Drawing.Size(234, 66);
             this.UjTalalkozoFelvetele.TabIndex = 4;
             this.UjTalalkozoFelvetele.Text = "Felvétel";
             this.UjTalalkozoFelvetele.UseVisualStyleBackColor = false;
@@ -425,10 +425,10 @@
             // 
             this.Bezárás.AutoSize = true;
             this.Bezárás.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Bezárás.Location = new System.Drawing.Point(484, 455);
-            this.Bezárás.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Bezárás.Location = new System.Drawing.Point(689, 824);
+            this.Bezárás.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Bezárás.Name = "Bezárás";
-            this.Bezárás.Size = new System.Drawing.Size(77, 20);
+            this.Bezárás.Size = new System.Drawing.Size(138, 35);
             this.Bezárás.TabIndex = 13;
             this.Bezárás.Text = "Bezárás:";
             // 
@@ -439,10 +439,10 @@
             this.ExportAllData.Dock = System.Windows.Forms.DockStyle.Left;
             this.ExportAllData.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ExportAllData.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ExportAllData.Location = new System.Drawing.Point(658, 371);
-            this.ExportAllData.Margin = new System.Windows.Forms.Padding(4);
+            this.ExportAllData.Location = new System.Drawing.Point(1008, 671);
+            this.ExportAllData.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.ExportAllData.Name = "ExportAllData";
-            this.ExportAllData.Size = new System.Drawing.Size(126, 36);
+            this.ExportAllData.Size = new System.Drawing.Size(299, 66);
             this.ExportAllData.TabIndex = 4;
             this.ExportAllData.Text = "Exportálás";
             this.ExportAllData.UseVisualStyleBackColor = false;
@@ -454,10 +454,10 @@
             this.Bezaras.BackColor = System.Drawing.Color.LemonChiffon;
             this.Bezaras.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bezaras.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Bezaras.Location = new System.Drawing.Point(658, 459);
-            this.Bezaras.Margin = new System.Windows.Forms.Padding(4);
+            this.Bezaras.Location = new System.Drawing.Point(1008, 831);
+            this.Bezaras.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.Bezaras.Name = "Bezaras";
-            this.Bezaras.Size = new System.Drawing.Size(126, 33);
+            this.Bezaras.Size = new System.Drawing.Size(243, 67);
             this.Bezaras.TabIndex = 14;
             this.Bezaras.Text = "Bezárás";
             this.Bezaras.UseVisualStyleBackColor = false;
@@ -469,15 +469,15 @@
             // 
             // Pénzügyi_tanácsadás
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Azure;
-            this.ClientSize = new System.Drawing.Size(882, 500);
+            this.ClientSize = new System.Drawing.Size(1544, 906);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.Margin = new System.Windows.Forms.Padding(1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MinimizeBox = false;
             this.Name = "Pénzügyi_tanácsadás";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

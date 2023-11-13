@@ -16,7 +16,7 @@ namespace Penzugyi_tanacsado
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Pénzügyi_tanácsadás());
+            Application.Run(new penzugyiTanacsadas());
         }
     }
 }

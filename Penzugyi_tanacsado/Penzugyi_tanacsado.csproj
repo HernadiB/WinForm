@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pénzügyi_tanácsadás.cs">
+    <Compile Include="penzugyiTanacsadas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pénzügyi_tanácsadás.Designer.cs">
-      <DependentUpon>Pénzügyi_tanácsadás.cs</DependentUpon>
+    <Compile Include="penzugyiTanacsadas.Designer.cs">
+      <DependentUpon>penzugyiTanacsadas.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -59,14 +59,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>tanacsadoDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Új találkozó felvétele.cs">
+    <Compile Include="ujTalalkozoFelvetele.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Új találkozó felvétele.Designer.cs">
-      <DependentUpon>Új találkozó felvétele.cs</DependentUpon>
+    <Compile Include="ujTalalkozoFelvetele.Designer.cs">
+      <DependentUpon>ujTalalkozoFelvetele.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Pénzügyi_tanácsadás.resx">
-      <DependentUpon>Pénzügyi_tanácsadás.cs</DependentUpon>
+    <EmbeddedResource Include="penzugyiTanacsadas.resx">
+      <DependentUpon>penzugyiTanacsadas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -77,8 +77,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Új találkozó felvétele.resx">
-      <DependentUpon>Új találkozó felvétele.cs</DependentUpon>
+    <EmbeddedResource Include="ujTalalkozoFelvetele.resx">
+      <DependentUpon>ujTalalkozoFelvetele.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
